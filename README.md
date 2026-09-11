@@ -7,11 +7,26 @@ Cinegraphic is a reusable image-to-poster prompting system that transforms refer
 
 Cinegraphic 是一套可复用的图像转海报提示词系统：把普通照片、人物图和参考构图重新设计成具有电影海报感、编辑插画感与复古印刷质感的现代主义作品。
 
-<p align="center">
-  <img src="assets/reference-user-test.jpg" width="100%" alt="Cinegraphic reference comparisons">
-</p>
+## Reference transformations / 参考效果
 
-<p align="center"><sub>Noir / Temporal / Romance · three source-to-Cinegraphic transformations</sub></p>
+<table>
+<tr>
+<td width="33.33%" align="center" valign="top">
+<img src="https://raw.githubusercontent.com/BryceYuuu/cinegraphic-skill/main/assets/noir.jpg" width="100%" alt="Cinegraphic Noir comparison"><br>
+<sub><b>Noir</b></sub>
+</td>
+<td width="33.33%" align="center" valign="top">
+<img src="https://raw.githubusercontent.com/BryceYuuu/cinegraphic-skill/main/assets/temporal.jpg" width="100%" alt="Cinegraphic Temporal comparison"><br>
+<sub><b>Temporal</b></sub>
+</td>
+<td width="33.33%" align="center" valign="top">
+<img src="https://raw.githubusercontent.com/BryceYuuu/cinegraphic-skill/main/assets/romance.jpg" width="100%" alt="Cinegraphic Romance comparison"><br>
+<sub><b>Romance</b></sub>
+</td>
+</tr>
+</table>
+
+<p align="center"><sub>Three source-to-Cinegraphic transformations · 三组原图 → Cinegraphic 风格转译</sub></p>
 
 ---
 
