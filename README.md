@@ -7,53 +7,133 @@ Cinegraphic is a reusable image-to-poster prompting system that transforms refer
 
 Cinegraphic 是一套可复用的图像转海报提示词系统：把普通照片、人物图和参考构图重新设计成具有电影海报感、编辑插画感与复古印刷质感的现代主义作品。
 
-![Cinegraphic reference grid](assets/reference-grid.jpg)
+<p align="center">
+  <img src="assets/reference-grid-horizontal.jpg" width="100%" alt="Cinegraphic reference comparisons">
+</p>
 
-## Core visual grammar / 核心视觉语言
+<p align="center"><sub>Noir / Temporal / Romance · three source-to-Cinegraphic transformations</sub></p>
 
-- Mid-century modern poster composition / 20 世纪中叶现代主义构图
-- Editorial illustration / 编辑插画
-- Vintage cinema poster design / 复古电影海报
-- Restricted 3–5 color palettes / 3–5 色限制色体系
-- Geometric facial and body planes / 人物几何切面
-- Oversized typography as composition / 巨型字体参与构图
-- Strong negative space and asymmetric hierarchy / 大面积留白与非对称层级
-- Screen-print, Risograph and paper grain / 丝网印刷、Risograph 与纸张颗粒
-- Simplified architecture and environmental silhouettes / 建筑与环境几何化
+---
 
-The objective is not to make an image simply look old. The objective is to make it look **designed**.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-目标不是把图片简单“做旧”，而是让它看起来像真的被设计过。
+### Visual grammar / 视觉语言
 
-## Prompt versions / 提示词版本
+- Mid-century modern composition
+- Editorial illustration
+- Vintage cinema poster design
+- Restricted 3–5 color palettes
+- Geometric facial & body planes
+- Oversized typography
+- Strong negative space
+- Screen-print / Risograph texture
 
-### Local / Open Model — Maximum Reference Fidelity
-适用于本地/开源工作流，如 FLUX、Qwen Image、SDXL、ComfyUI。优先保留参考图构图、人物关系、动作和视觉层级。
+</td>
+<td width="50%" valign="top">
 
-- [English + 中文](prompts/local-reference-faithful.md)
+### What it does / 它做什么
 
-### Hosted / Guardrail-Friendly — Original Reinterpretation
-适用于 ChatGPT、Gemini 等可能存在第三方相似性保护的平台。先提取高层视觉结构，再从零重构原创海报。
+- 保留人物关系与视觉重心
+- 压缩复杂配色为有限色体系
+- 把人物重构成几何块面
+- 用大字参与构图，而不是简单贴字
+- 简化建筑和环境噪音
+- 加入纸张、油墨、套印偏差等印刷质感
 
-- [English + 中文](prompts/hosted-original-reinterpretation.md)
+</td>
+</tr>
+</table>
 
-## Recommended ratios / 推荐比例
+> The objective is not to make an image look old. The objective is to make it look **designed**.  
+> 目标不是把图片简单“做旧”，而是让它看起来像真的被设计过。
 
-- `3:4` — social cover / 社交封面
-- `2:3` — classic poster / 经典电影海报
-- `4:5` — editorial / 编辑视觉
-- `16:9` — landscape key art / 横版主视觉
+---
 
-## Local image-to-image strength / 本地图生图强度参考
+## Choose your mode / 选择版本
 
-- `0.35–0.55` — preserve more composition / 更多保留原构图
-- `0.55–0.75` — stronger Cinegraphic transformation / 更明显风格转译
-- `0.75+` — loose reinterpretation / 更自由重新设计
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Local / Open Model
+**Maximum Reference Fidelity**
+
+适合 FLUX、Qwen Image、SDXL、ComfyUI 等本地 / 开源工作流。
+
+优先保留：
+- 构图
+- 人物关系
+- 动作
+- 镜头方向
+- 主色关系
+- 关键道具
+
+**[English + 中文 Prompt →](prompts/local-reference-faithful.md)**
+
+</td>
+<td width="50%" valign="top">
+
+### Hosted / Guardrail-Friendly
+**Original Reinterpretation**
+
+适合 ChatGPT、Gemini 等可能存在第三方相似性保护的平台。
+
+工作流：
+- 提取高层情绪与构图
+- 去掉可识别第三方身份细节
+- 从零重构原创人物与版式
+- 再套用 Cinegraphic 视觉系统
+
+**[English + 中文 Prompt →](prompts/hosted-original-reinterpretation.md)**
+
+</td>
+</tr>
+</table>
+
+---
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Recommended ratios / 推荐比例
+
+| Use | Ratio |
+|---|---|
+| Social cover | `3:4` |
+| Classic poster | `2:3` |
+| Editorial | `4:5` |
+| Landscape key art | `16:9` |
+
+</td>
+<td width="50%" valign="top">
+
+### Local img2img strength / 本地图生图强度
+
+| Strength | Result |
+|---|---|
+| `0.35–0.55` | 更多保留原构图 |
+| `0.55–0.75` | 更明显风格转译 |
+| `0.75+` | 更自由重新设计 |
+
+</td>
+</tr>
+</table>
+
+---
+
+## Skill file
+
+For agent / skill-based workflows, use **[SKILL.md](SKILL.md)**.
+
+用于 Agent / Skill 工作流时，直接读取 **[SKILL.md](SKILL.md)**。
 
 ## Author
 
-Bryce Yu
+**Bryce Yu**
 
 ## License
 
-Prompt text and documentation are released under the MIT License. Third-party source imagery shown in the comparison grid is for visual study/reference only and is not included in the MIT license.
+Prompt text and documentation are released under the MIT License. Third-party source imagery shown in the comparison examples is for visual study/reference only and is not included in the MIT license.
