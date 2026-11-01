@@ -196,3 +196,12 @@ Cinegraphic 是一套可复用的图像转海报提示词系统：把普通照�
 | generic AI art<br>3D render<br>plastic skin<br>photorealistic skin texture<br>neon cyberpunk<br>overly complex background<br>excessive detail<br>random typography<br>cheap advertising<br>glossy digital illustration<br>oversaturated gradients<br>cluttered composition<br>floating decorative objects<br>stock photo aesthetics | 普通AI插画感<br>3D渲染<br>塑料皮肤<br>摄影级皮肤纹理<br>赛博朋克霓虹<br>复杂背景<br>过度细节<br>随机字体<br>廉价广告感<br>光滑数字插画<br>过饱和渐变<br>杂乱构图<br>随机漂浮装饰<br>图库照片感 |
 
 </details>
+
+## Sponsor / 赞助支持
+
+If this project helps you, consider sponsoring to support ongoing maintenance.
+
+如果这个项目对你有帮助，欢迎赞助支持，让我能持续维护和更新。
+
+- [GitHub Sponsors](https://github.com/sponsors/BryceYuuu): card / PayPal
+- [爱发电 Afdian](https://afdian.com/a/bryce): 微信 / 支付宝 (WeChat Pay / Alipay)
